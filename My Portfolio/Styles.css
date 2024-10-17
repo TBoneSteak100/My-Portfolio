@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display:contents;
+    
+  }
+
+  #body1{
+    height: 100vh; /* Adjust height of the section */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:sticky;
+    overflow:visible;
+    margin: 0px;
+    max-height: 100vh;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(51, 51, 51);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    transition: all 0.3s ease;
+    z-index: 1000;
+  }
+  
+  /* Hover effect */
+  .header-image-of-me:hover {
+    
+    transform: scale(1.2); /* Slight enlargement */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a shadow */
+  }
+
+  /* The header height */
+  .header-image-of-me {
+    height: 150px;
+  }
+  
+  /*Making the link text white*/
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: font-size 0.3s ease;
+  }
+  
+
+  /* Adding a background image only to the section */
+  .backpicture::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 155%;
+    background: url(images/page.jpg) center/cover no-repeat;
+    opacity: 0.3; /* Make the image semi-transparent */
+    z-index: -1; /* Keep it behind the content */
+  }
+  
+  /* Adding a background image only to the section */
+  .backpicture1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(images/page.jpg) center/cover no-repeat;
+    opacity: 0.3; /* Make the image semi-transparent */
+    z-index: -1; /* Keep it behind the content */
+  }
+
+  * Slide-in and slide-out animations */
+.slide-in {
+  animation: slideIn 1s ease forwards;
+}
+
+.slide-out {
+  animation: slideOut 1s ease forwards;
+}
+
+/* Keyframes for slide-in and slide-out */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #3498db;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #7fa9c5;
+}
+
+  /* Adding a background image only to the section */
+  .backpicture2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(images/page.jpg) center/cover no-repeat;
+    opacity: 0.3; /* Make the image semi-transparent */
+    z-index: -1; /* Keep it behind the content */
+  }
+
+  .Page {
+ 
+    max-width: 700px; 
+    margin: 0 auto;
+    transform: translateY(200px);
+    background-color: #ececec;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .Page1 {
+ 
+    max-width: 700px; 
+    margin: 0 auto;
+    transform: translateY(100px);
+    background-color: #ececec;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .Page2 {
+ 
+    max-width: 700px; 
+    margin: 0 auto;
+    transform: translateY(200px);
+    padding: 50px;
+    border-radius: 10px;
+    
+  }
+
+  #p1{
+    margin-right: 0 auto;
+    font-size:  16px;
+    color: #333; 
+  }
+
+  .image-gallery {
+    display: flex;
+    gap: 15px;
+  }
+  
+  /* Styling each image */
+  .image-gallery img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    transform: translateY(200px);
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  /* Hover effect */
+  .image-gallery img:hover {
+    
+    transform: scale(1.1); /* Slight enlargement */
+    transform: translateY(170px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a shadow */
+  }
+
+  /* Styling the info section */
+.info-section {
+    max-width: 600px;
+    margin: 0 auto;
+    transform: translateY(200px);
+    background-color: #ececec;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-section h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .info-section ul {
+    list-style-type: none;
+  }
+  
+  .info-section li {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .info-section strong {
+    color: #333;
+  }
+
+  /* Section containing the icons and explanations */
+.Job_Experience {
+    max-width: 750px;
+    margin: 0 auto;
+    transform: translateY(200px);
+    background-color: #ececec;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Each item with an icon and explanation */
+  .Job {
+    display:flexbox;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for icons */
+  .Job_icon {
+    width: 70px;
+    height: 70px;
+    
+    object-fit: cover;
+    border-radius: 50%; /* Optional: makes the icon round */
+  }
+  
+  /* Styling for the explanations */
+  .Job p {
+    margin: 0 auto;
+   
+    font-size: 16px;
+    color: #333;
+  }
+
+  /* Section containing the icons and links */
+.icon-link-section {
+    width: 50%;
+    display: flex;
+    margin: 0 auto;
+    transform: translateY(200px);
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Each item with an icon and a link */
+  .item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Icon styling */
+  .icon {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%; /* Optional: Makes icons round */
+  }
+  
+  /* Styling for the links */
+  .item a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #3498db;
+    transition: color 0.3s;
+  }
+  
+  .item a:hover {
+    color: #123751;
+    transform: scale(1.2);
+  }
